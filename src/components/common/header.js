@@ -5,8 +5,8 @@ var Router = require('react-router');
 var Link = Router.Link;
 
 var Header = React.createClass({ 
-    render(){ 
-        return(
+    render: function(){ 
+        return (
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
                     <a href="/" className="navbar-brand">

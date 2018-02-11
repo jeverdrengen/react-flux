@@ -5,7 +5,7 @@ var Router = require('react-router');
 var Link = Router.Link;
 
 var NotFound = React.createClass({
-    render() {
+    render: function() {
         return (
             <div>
                 <h1>Page not found</h1>

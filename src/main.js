@@ -4,7 +4,10 @@
 var React = require('react');
 var Router = require('react-router');
 var routes = require('./routes');
+var InitializeActions = require('./actions/initialize-actions');
 
-Router.run(routes, Router.HistoryLocation, function(Handler){ 
+InitializeActions.initApp();
+// Router.HistoryLocation
+Router.run(routes, function(Handler){ 
     React.render(<Handler />, document.getElementById('app'));
 });
